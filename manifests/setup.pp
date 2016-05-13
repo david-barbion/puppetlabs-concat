@@ -45,6 +45,7 @@ class concat::setup {
     'windows' => "ruby.exe '${script_path}'",
     'openbsd' => "/usr/local/bin/ruby21 '${script_path}'",
     'freebsd' => "/usr/local/bin/ruby '${script_path}'",
+    'redhat'  => "/usr/bin/ruby '${script_path}'",
     default   => $script_path
   }
 
